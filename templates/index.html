@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio - Sebastian Vega{% endblock %}
+
+{% block content %}
+
+<section class="intro">
+    <div class="intro-text">
+        <h2>Bienvenido</h2>
+        <p>Hola, soy <strong>Sebastian Vega Echeverria</strong>, con experiencia breve en la programación. Mi objetivo es realizar programas que cumplan con las necesidades humanas para facilitar sus vidas.</p>
+        <p>En este sitio, encontrarás información sobre mis proyectos, logros y cómo puedo ayudarte a alcanzar tus objetivos. Mi enfoque se centra en programación básica.</p>
+    </div>
+    <div class="intro-imagen">
+        <img  src="{{ url_for('static', filename='images/Sebas.png') }}" alt="Sebas">
+        <img  src="{{ url_for('static', filename='images/Sebas.png') }}" alt="Sebas">
+        <img  src="{{ url_for('static', filename='images/Sebas.png') }}" alt="Sebas">
+    </div>
+</section>
+
+<section class="services">
+    <h2>Servicios</h2>
+    <ul>
+        <li>CSS edición de páginas web</li>
+        <li>JAVA lenguaje de programación</li>
+        <li>PYTHON lenguaje de programación</li>
+    </ul>
+</section>
+
+<section class="contact">
+    <h2>Contacto</h2>
+    <p>¿Tienes alguna pregunta o deseas discutir un proyecto? No dudes en ponerte en contacto conmigo a través del <a href="{{ url_for('contacto') }}">formulario de contacto</a>.</p>
+</section>
+{% endblock %}

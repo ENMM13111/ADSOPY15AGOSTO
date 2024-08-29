@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mi Página Personal{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+            <h1>Sebastian Vega Echeverria</h1>
+            <p class="subtitle">Analisis Y Desarrollo De Software</p>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                    <li><a href="{{ url_for('ayuda') }}">Ayuda</a></li>
+                    <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="container">
+            <p> Gracias por revisar mi página web.</p>
+        </div>
+    </footer>
+</body>
+</html>

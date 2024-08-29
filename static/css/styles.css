@@ -1,0 +1,378 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1f1c2c, #928d8d);
+    color: #e0e0e0;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #e0e0e0;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+}
+
+header .subtitle {
+    font-size: 1.2em;
+    margin: 5px 0 15px;
+    color: #a1a1a1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: block;
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: #0cf;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+main.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.intro {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro-text {
+    margin-bottom: 20px;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.services {
+    margin-bottom: 30px;
+}
+
+.services h2 {
+    border-bottom: 2px solid #0cf;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.services ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.contact {
+    margin-bottom: 30px;
+}
+
+.contact h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #0cf;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.contact a {
+    color: #0cf;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact a:hover {
+    color: #e0e0e0;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #e0e0e0;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+    header .subtitle {
+        font-size: 1em;
+        margin: 5px 0 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    main.container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro-text {
+        margin-bottom: 15px;
+    }
+
+    .intro-image img {
+        border-radius: 6px;
+    }
+
+    .services h2 {
+        font-size: 1.5em;
+    }
+
+    .services ul li {
+        font-size: 1em;
+    }
+
+    .contact h2 {
+        font-size: 1.5em;
+    }
+
+    @media only screen and (max-width: 800px){
+        header h1 {
+            font-size: 1.8em;
+        }
+        .intro-imagen {
+            display: grid;
+            grid-template-columns: auto auto
+            gap: 16px; 
+        }
+        
+        .intro-imagen img {
+            border-radius: 6px;
+            width: 100%; 
+        }
+           
+        @import "https://fonts.googleapis.com/css?family=Poppins";
+        * {
+          box-sizing: border-box;
+        }
+        body {
+          margin: 0;
+          padding: 0;
+          background: #333;
+          font-family: Poppins;
+          text-transform: uppercase;
+          font-size: 11px;
+          background: #0f0c29; /* fallback for old browsers */
+          background: -webkit-linear-gradient(
+            to right,
+            #24243e,
+            #302b63,
+            #0f0c29
+          ); /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(
+            to right,
+            #24243e,
+            #302b63,
+            #0f0c29
+          ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        h1 {
+          margin: 0;
+        }
+        #contact {
+          margin: 4em auto;
+          width: 100px;
+          height: 30px;
+          line-height: 30px;
+          font-weight: 700;
+          text-align: center;
+          cursor: pointer;
+          border: 1px solid white;
+        }
+        
+        #contact:hover {
+          background: #000000;
+        }
+        #contact:active {
+          background: #444;
+        }
+        
+        #contactForm {
+          display: none;
+        
+          border: 6px solid 3324be;
+          padding: 2em;
+          width: 400px;
+          text-align: center;
+          background: #fff;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          border-radius: 16px;
+        }
+        
+        input,
+        textarea {
+          outline: 0;
+          background: #f2f2f2;
+          width: 100%;
+          border: 0;
+          margin: 0 0 15px;
+          padding: 15px;
+          box-sizing: border-box;
+          font-size: 14px;
+          border-radius: 15px;
+        }
+        textarea {
+          height: 80px;
+          resize: none;
+        }
+        
+        .formBtn {
+          outline: 0;
+          background: #3324be;
+          width: 140px;
+          height: 30px;
+          border: 0;
+          color: #ffffff;
+          font-size: 1.2em;
+          border-radius: 15px;
+          -webkit-transition: all 0.3 ease;
+          transition: all 0.3 ease;
+          cursor: pointer;
+        }
+
+/* Estilos generales del formulario */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5em;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e1e1;
+}
+
+/* Estilo para los grupos de formulario */
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+/* Estilo para las etiquetas del formulario */
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Estilo para los campos de entrada */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    border: 1px solid #ccc;
+    padding: 0.8em;
+    font-size: 1em;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Estilo para los campos de entrada en foco */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Estilo para el botón de envío */
+form button {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 0.8em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1em;
+    margin: 1em 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Estilo para el botón de envío en hover */
+form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Estilo para el botón de envío en foco */
+form button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+}
+/* Estilo para los mensajes de alerta */
+.alert-container {
+    margin-bottom: 1em;
+}
+
+.alert {
+    background-color: #ffcccc;
+    color: #cc0000;
+    border: 1px solid #cc0000;
+    padding: 0.5em;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+
+
+
+
+        
